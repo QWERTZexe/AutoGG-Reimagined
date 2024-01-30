@@ -10,7 +10,7 @@ AutoGG Reimagined allows you to customize GG messages which are automatically se
 - Launch forge 1.8.9 with the mod
 - Set the trigger in the config to the word which means "WINNER" in your set Hypixel language
 
-![WINNER](https://github.com/QWERTZexe/AutoGG-Reimagined/tree/main/images/assets/WINNER.png)
+![WINNER](https://github.com/QWERTZexe/AutoGG-Reimagined/blob/main/images/assets/WINNER.png?raw=true)
 
 ## How to use
 /gg to open the config
@@ -19,4 +19,4 @@ AutoGG Reimagined allows you to customize GG messages which are automatically se
 - Works for every game on Hypixel
 - Saves your time by automatically sending your own GG message into the chat
 ## Screenshots
-![Config](https://github.com/QWERTZexe/AutoGG-Reimagined/tree/main/images/Config.png)
+![Config](https://github.com/QWERTZexe/AutoGG-Reimagined/blob/main/images/Config.png?raw=true)
