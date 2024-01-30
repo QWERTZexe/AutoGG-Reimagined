@@ -55,8 +55,6 @@ class CommandEventHandler {
                     if (config.GG2ndSwitch) {
                         sendDelayedMsg()
                     }
-                } else {
-                    Minecraft.getMinecraft().thePlayer.addChatMessage(ChatComponentText("§4[§6§lAUTOGG REIMAGINED§4]§a: The mod is disabled in OneConfig. Please enable it."))
                 }
                allowgg()
             }
