@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "autogg_reimagined",
+    "name": "AutoGG Reimagined",
+    "description": "AutoGG Reimagined allows you to customize GG messages which are automatically sent after a game on Hypixel!",
+    "version": "${version}",
+    "mcversion": "1.8.9",
+    "url": "https://github.com/QWERTZexe/autogg-reimagined",
+    "updateUrl": "",
+    "authors": ["QWERTZ"],
+    "credits": "Flaticon - Icon",
+    "logoFile": "/AutoGG.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

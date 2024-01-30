@@ -1,0 +1,13 @@
+{
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.7",
+  "package": "com.qwertz.autogg_reimagined.mixin",
+  "refmap": "mixins.autogg_reimagined.refmap.json",
+  "injectors": {
+    "maxShiftBy": 5
+  },
+  "client": [
+    "AutoGGMixin"
+  ],
+  "verbose": true
+}
