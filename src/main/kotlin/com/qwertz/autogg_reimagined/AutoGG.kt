@@ -43,22 +43,25 @@ class CommandEventHandler {
 
     @SubscribeEvent
     fun onChatReceived(event: ClientChatReceivedEvent) {
-        val message = event.message.formattedText
-        if (config.GGTrigger in message) {
-            if (!ggSaid) {
-                // Send "gg" message here
-                ggSaid = true  // Set the variable to true to indicate that "gg" has been said
-                // Schedule a task to reset ggSaid after the delay
-                val GGMessage = config.GGMessage
-                if (IsEnabled().EnabledCheck()) {
-                    Minecraft.getMinecraft().thePlayer.sendChatMessage("/ac $GGMessage")
-                    if (config.GG2ndSwitch) {
-                        sendDelayedMsg()
+        val message = event.message.unformattedText
+        val triggers = config.GGTriggers.split(";")
+        for (trigger in triggers) {
+            if (trigger in message) {
+                if (!ggSaid) {
+                    // Send "gg" message here
+                    ggSaid = true  // Set the variable to true to indicate that "gg" has been said
+                    // Schedule a task to reset ggSaid after the delay
+                    val GGMessage = config.GGMessage
+                    if (IsEnabled().EnabledCheck()) {
+                        Minecraft.getMinecraft().thePlayer.sendChatMessage("/ac $GGMessage")
+                        if (config.GG2ndSwitch) {
+                            sendDelayedMsg()
+                        }
                     }
+                   allowgg()
                 }
-               allowgg()
-            }
 
+            }
         }
     }
 

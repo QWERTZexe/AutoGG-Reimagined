@@ -25,7 +25,7 @@ class AutoGGConfig : Config(Mod(AutoGG.NAME, ModType.UTIL_QOL, "/AutoGG.png"), A
         min = 0f, max = 5f
     )
     var GG2ndDelay: Float = 1.0F
-    @Text(name = "TRIGGER", size = OptionSize.DUAL)
-    var GGTrigger: String = "§e§lWINNER"
+    @Text(name = "TRIGGERS (SEPERATE WITH ';')", size = OptionSize.DUAL, multiline = true)
+    var GGTriggers: String = "WINNER;Winner;Blocks Placed"
 
 }
