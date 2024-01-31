@@ -48,9 +48,7 @@ class CommandEventHandler {
         for (trigger in triggers) {
             if (trigger in message) {
                 if (!ggSaid) {
-                    // Send "gg" message here
-                    ggSaid = true  // Set the variable to true to indicate that "gg" has been said
-                    // Schedule a task to reset ggSaid after the delay
+                    ggSaid = true
                     val GGMessage = config.GGMessage
                     if (IsEnabled().EnabledCheck()) {
                         Minecraft.getMinecraft().thePlayer.sendChatMessage("/ac $GGMessage")
@@ -61,6 +59,16 @@ class CommandEventHandler {
                    allowgg()
                 }
 
+            }
+        }
+        val triggers2 = config.AntiGGTriggers.split(";")
+        for (trigger2 in triggers2) {
+            if (event.message.unformattedText.contains(": $trigger2") && config.AntiGGSwitch) {
+                // Cancel the event or manipulate the message to prevent it from being displayed
+                event.isCanceled = true
+                if (config.NotifySwitch) {
+                    Minecraft.getMinecraft().thePlayer.addChatMessage(ChatComponentText("§4[§6§lAUTOGG REIMAGINED§4]§a: GG message hidden"))
+                }
             }
         }
     }
