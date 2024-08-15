@@ -21,7 +21,7 @@ class AutoGG {
 
     @Mod.EventHandler
     fun onInit(event: FMLInitializationEvent?) {
-        config = com.qwertz.autogg_reimagined.config.AutoGGConfig()
+        config = com.qwertz.autogg_reimagined.config.AutoGGConfig
         MinecraftForge.EVENT_BUS.register(CommandEventHandler())
         ClientCommandHandler.instance.registerCommand(AutoGGCommand())
 
