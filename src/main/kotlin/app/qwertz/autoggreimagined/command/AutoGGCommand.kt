@@ -1,10 +1,10 @@
-package com.qwertz.autogg_reimagined.command
+package app.qwertz.autoggreimagined.command
 
 import cc.polyfrost.oneconfig.utils.commands.annotations.Command
-import com.qwertz.autogg_reimagined.AutoGG
+import app.qwertz.autoggreimagined.AutoGG
 import net.minecraft.command.CommandBase
 import net.minecraft.command.ICommandSender
-import com.qwertz.autogg_reimagined.AutoGG.Companion.config
+import app.qwertz.autoggreimagined.AutoGG.Companion.config
 import net.minecraft.client.Minecraft
 import net.minecraft.util.ChatComponentText
 val AGConfig = config

@@ -1,4 +1,4 @@
-package com.qwertz.autogg_reimagined
+package app.qwertz.autoggreimagined
 
 import cc.polyfrost.oneconfig.utils.gui.GuiUtils
 import net.minecraftforge.fml.common.Mod
@@ -7,11 +7,12 @@ import net.minecraftforge.client.event.ClientChatReceivedEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.minecraftforge.client.ClientCommandHandler
 import net.minecraftforge.fml.common.event.FMLInitializationEvent
-import com.qwertz.autogg_reimagined.command.AutoGGCommand
+import app.qwertz.autoggreimagined.command.AutoGGCommand
 import net.minecraftforge.common.MinecraftForge
 import net.minecraft.client.Minecraft
-import com.qwertz.autogg_reimagined.AutoGG.Companion.config
-import com.qwertz.autogg_reimagined.command.IsEnabled
+import app.qwertz.autoggreimagined.AutoGG.Companion.config
+import app.qwertz.autoggreimagined.config.AutoGGConfig
+import app.qwertz.autoggreimagined.command.IsEnabled
 import net.minecraft.util.ChatComponentText
 import kotlin.math.roundToLong
 
@@ -21,7 +22,7 @@ class AutoGG {
 
     @Mod.EventHandler
     fun onInit(event: FMLInitializationEvent?) {
-        config = com.qwertz.autogg_reimagined.config.AutoGGConfig
+        config = AutoGGConfig
         MinecraftForge.EVENT_BUS.register(CommandEventHandler())
         ClientCommandHandler.instance.registerCommand(AutoGGCommand())
 
@@ -33,7 +34,7 @@ class AutoGG {
 
         @Mod.Instance(MODID)
         lateinit var INSTANCE: AutoGG
-        lateinit var config: com.qwertz.autogg_reimagined.config.AutoGGConfig
+        lateinit var config: AutoGGConfig
     }
 }
 
