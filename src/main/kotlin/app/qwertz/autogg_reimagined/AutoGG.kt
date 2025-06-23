@@ -1,18 +1,17 @@
-package app.qwertz.autoggreimagined
+package app.qwertz.autogg_reimagined
 
-import cc.polyfrost.oneconfig.utils.gui.GuiUtils
 import net.minecraftforge.fml.common.Mod
 import kotlinx.coroutines.*
 import net.minecraftforge.client.event.ClientChatReceivedEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.minecraftforge.client.ClientCommandHandler
 import net.minecraftforge.fml.common.event.FMLInitializationEvent
-import app.qwertz.autoggreimagined.command.AutoGGCommand
+import app.qwertz.autogg_reimagined.command.AutoGGCommand
 import net.minecraftforge.common.MinecraftForge
 import net.minecraft.client.Minecraft
-import app.qwertz.autoggreimagined.AutoGG.Companion.config
-import app.qwertz.autoggreimagined.config.AutoGGConfig
-import app.qwertz.autoggreimagined.command.IsEnabled
+import app.qwertz.autogg_reimagined.AutoGG.Companion.config
+import app.qwertz.autogg_reimagined.config.AutoGGConfig
+import app.qwertz.autogg_reimagined.command.IsEnabled
 import net.minecraft.util.ChatComponentText
 import kotlin.math.roundToLong
 

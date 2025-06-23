@@ -1,7 +1,8 @@
-package app.qwertz.autoggreimagined.config
+package app.qwertz.autogg_reimagined.config
 
-import app.qwertz.autoggreimagined.AutoGG
+import app.qwertz.autogg_reimagined.AutoGG
 import cc.polyfrost.oneconfig.config.Config
+import cc.polyfrost.oneconfig.config.annotations.Button
 import cc.polyfrost.oneconfig.config.annotations.Header
 import cc.polyfrost.oneconfig.config.annotations.Switch
 import cc.polyfrost.oneconfig.config.annotations.Text

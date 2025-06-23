@@ -1,4 +1,4 @@
-package app.qwertz.autoggreimagined.mixin;
+package app.qwertz.autogg_reimagined.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
